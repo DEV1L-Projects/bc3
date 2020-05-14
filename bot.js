@@ -7,7 +7,7 @@ const Discord = require("discord.js");
         });
 
   client.on('message', message => {
-    if (message.content.split(' ')[0] == '1bc')
+    if (message.content.split(' ')[0] == '3bc')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
@@ -19,7 +19,7 @@ const Discord = require("discord.js");
             
                                                   });
    client.on("message", message => {
-       var prefix = "1";
+       var prefix = "3";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "bc")) {
